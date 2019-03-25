@@ -162,7 +162,7 @@ img {
 @media(max-width: 800px) {
   /* For views below 800px */
   .container {
-    margin: 0 4%;
+    margin: 0 2.5%;
   }
 
   header {
@@ -183,7 +183,8 @@ img {
   }
 
   .hero {
-    margin-bottom: 70px;
+    margin-bottom: 60px;
+    padding-bottom: 30px;
   }
 
   .hero .cta {
@@ -196,6 +197,19 @@ img {
 
   .hero .img {
     display: none;
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+
+  [class$='-section-wrapper'] {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  [class$='-section-wrapper'] p {
+    line-height: 1.25;
   }
 }
 
