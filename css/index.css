@@ -272,14 +272,11 @@ img {
   [class$='-section-wrapper']  section:not(:first-child) {
     margin-left: 0;
   }
-
-
-
 }
 
 /* Services CSS */
 
-/* main h1 {
+main h1 {
 	font-size: 28px;
 }
 
@@ -324,7 +321,16 @@ img {
 	margin-top: 20px;
 	list-style: square inside;
 	line-height: 2;
-} */
+}
+
+@media(max-width: 800px) {
+  /* For screens below 800px */
+}
+
+@media(max-width: 500px) {
+  /* For screens below 500px */
+}
+
 
 /* Stretch */
 /* .showcase-container {
