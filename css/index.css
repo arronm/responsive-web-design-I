@@ -250,6 +250,31 @@ img {
   .logo {
     margin-bottom: 10px;
   }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
+  hr {
+    margin: 40px -2.5%;
+  }
+
+  [class$='-section-wrapper'] {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  [class$='-section-wrapper'] section {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  [class$='-section-wrapper']  section:not(:first-child) {
+    margin-left: 0;
+  }
+
+  
+
 }
 
 /* Services CSS */
