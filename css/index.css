@@ -223,8 +223,32 @@ img {
 
 @media(max-width: 500px) {
   /* For views below 500px */
-  .container {
-    background: green;
+  header {
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  header nav {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav a {
+    padding: 20px 0;
+    margin: 0 -2.5%;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
+
+  .logo {
+    margin-bottom: 10px;
   }
 }
 
