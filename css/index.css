@@ -154,13 +154,23 @@ address span {
 	font-size: 14px;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 @media(max-width: 800px) {
   /* For views below 800px */
+  .container {
+    margin: 0 4%;
+  }
+
   header {
     /* display: flex; */
     flex-direction: column-reverse;
     margin-top: 30px;
     height: 90px;
+    margin-bottom: 70px;
   }
 
   header nav {
@@ -169,7 +179,23 @@ address span {
   }
 
   header nav a {
-    padding: 0 40px;
+    padding: 0 40px; /* TODO: If time change this to space-between */
+  }
+
+  .hero {
+    margin-bottom: 70px;
+  }
+
+  .hero .cta {
+    width: 100%;
+  }
+  
+  .hero .cta h1 {
+    font-size: 72px;
+  }
+
+  .hero .img {
+    display: none;
   }
 }
 
