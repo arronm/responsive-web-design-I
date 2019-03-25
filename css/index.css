@@ -211,6 +211,14 @@ img {
   [class$='-section-wrapper'] p {
     line-height: 1.25;
   }
+
+  .contact {
+    padding: 0 10px;
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
 }
 
 @media(max-width: 500px) {
