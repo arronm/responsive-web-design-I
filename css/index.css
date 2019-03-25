@@ -179,7 +179,7 @@ img {
   }
 
   header nav a {
-    padding: 0 40px; /* TODO: If time change this to space-between */
+    padding: 0 40px;
   }
 
   .hero {
@@ -273,7 +273,7 @@ img {
     margin-left: 0;
   }
 
-  
+
 
 }
 
