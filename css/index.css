@@ -325,10 +325,30 @@ main h1 {
 
 @media(max-width: 800px) {
   /* For screens below 800px */
+  p {
+    line-height: 1.25;
+    font-size: 18px;
+  }
+
+  .services-container .learn-more {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+  }
 }
 
 @media(max-width: 500px) {
   /* For screens below 500px */
+  .services-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .services-container section {
+    max-width: 100%;
+  }
 }
 
 
