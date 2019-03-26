@@ -1,3 +1,360 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+display: block;
+}
+body {
+line-height: 1;
+}
+ol, ul {
+list-style: none;
+}
+blockquote, q {
+quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content: '';
+content: none;
+}
+table {
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
+}
+
+/* Your code starts here! */
 
 
+/* Global CSS */
+.container {
+	max-width: 876px;
+	margin: 25px auto;
+}
+
+header {
+	height: 40px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav a {
+	padding: 0 28px;
+}
+
+nav a:first-child {
+	padding-left: 0;
+}
+
+/* Homepage CSS */
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 25px;
+}
+
+.hero .cta {
+	width: 50%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.hero .cta h1 {
+	font-size: 76px;
+}
+
+.hero .cta h1 span {
+	display: block;
+}
+
+.btn {
+	width: 180px;
+	height: 35px;
+	font-size: 20px;
+}
+
+hr {
+	margin: 50px 0;
+}
+
+[class$="-section-wrapper"] {
+	display: flex;
+	justify-content: space-around;
+	margin: 30px 0;
+}
+
+[class$='-section-wrapper'] section:not(:first-child) {
+	margin-left: 10px;
+}
+
+address {
+	margin-bottom: 25px;
+}
+
+address span {
+	display: block;
+}
+
+.phone, .email {
+	margin-bottom: 20px;
+}
+
+.copyright {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 50px;
+	font-size: 14px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+@media(max-width: 800px) {
+  /* For views below 800px */
+  .container {
+    margin: 0 2.5%;
+  }
+
+  header {
+    /* display: flex; */
+    flex-direction: column-reverse;
+    margin-top: 30px;
+    height: 90px;
+    margin-bottom: 70px;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav a {
+    padding: 0 40px;
+  }
+
+  .hero {
+    margin-bottom: 60px;
+    padding-bottom: 30px;
+  }
+
+  .hero .cta {
+    width: 100%;
+  }
+  
+  .hero .cta h1 {
+    font-size: 72px;
+  }
+
+  .hero .img {
+    display: none;
+  }
+
+  hr {
+    margin: 30px 0;
+  }
+
+  [class$='-section-wrapper'] {
+    margin-bottom: 40px;
+    padding: 0 10px;
+  }
+
+  [class$='-section-wrapper'] p {
+    line-height: 1.25;
+  }
+
+  .contact {
+    padding: 0 10px;
+  }
+
+  footer {
+    padding-bottom: 30px;
+  }
+}
+
+@media(max-width: 500px) {
+  /* For views below 500px */
+  header {
+    margin-top: 20px;
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  header nav {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav a {
+    padding: 20px 0;
+    margin: 0 -2.5%;
+    font-size: 20px;
+    border-bottom: 1px solid black;
+  }
+
+  header nav a:first-child {
+    border-top: 1px solid black;
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+
+  .hero {
+    margin-bottom: 50px;
+  }
+
+  hr {
+    margin: 40px -2.5%;
+  }
+
+  [class$='-section-wrapper'] {
+    flex-wrap: wrap;
+    margin: 0;
+  }
+
+  [class$='-section-wrapper'] section {
+    margin: 20px 0;
+    padding: 0;
+  }
+
+  [class$='-section-wrapper']  section:not(:first-child) {
+    margin-left: 0;
+  }
+}
+
+/* Services CSS */
+
+main h1 {
+	font-size: 28px;
+}
+
+.services-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: 30px 0;
+}
+
+.services-container section {
+	max-width: 48%;
+	padding: 20px;
+	margin-bottom: 4%;
+	background: #F4F4F4;
+	border: 1px solid #373737;
+	line-height: 1.25;
+}
+
+.services-container .learn-more {
+	height: 30px;
+	background: white;
+	margin-top: 20px;
+	display: inline-block;
+	padding: 0 40px;
+	line-height: 30px;
+	border-radius: 3px;
+	border: 1px solid #373737;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.info-container {
+	display: flex;
+}
+
+.info-container section {
+	margin-right: 40px;
+}
+
+.info-container section ul {
+	margin-top: 20px;
+	list-style: square inside;
+	line-height: 2;
+}
+
+@media(max-width: 800px) {
+  /* For screens below 800px */
+  p {
+    line-height: 1.25;
+    font-size: 18px;
+  }
+
+  .services-container .learn-more {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    height: 40px;
+    line-height: 40px;
+  }
+}
+
+@media(max-width: 500px) {
+  /* For screens below 500px */
+  .services-container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .services-container section {
+    max-width: 100%;
+  }
+
+  .info-container {
+    flex-direction: column-reverse;
+  }
+
+  .services-info-img {
+    margin-bottom: 30px;
+  }
+}
